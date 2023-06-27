@@ -42,7 +42,7 @@ fn main() {
 
         let idx = stacks[from].len() - count;
         let mut items: Vec<char> = stacks[from].drain(idx..).collect();
-        items.reverse();
+        // items.reverse();
         stacks[to].append(&mut items);
     }
 
